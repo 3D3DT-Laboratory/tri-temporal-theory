@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or theory in your research, please cite it as below."
+type: software
+title: "3D+3D Theory: Empirical Evidence for Six-Dimensional Discrete Spacetime"
+authors:
+  - family-names: Calzighetti
+    given-names: Simone
+    affiliation: "3D+3DT Laboratory, Abbiategrasso, Italy"
+  - name: "Lucy (AI Collaborator)"
+    affiliation: "Claude, Anthropic"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17516365
+    description: "Zenodo preprint DOI"
+repository-code: "https://github.com/3D3DT-Laboratory/tri-temporal-theory"
+url: "https://doi.org/10.5281/zenodo.17516365"
+abstract: >
+  We present comprehensive empirical validation of the 3D+3D discrete spacetime theory,
+  establishing three independent pillars of evidence for six-dimensional geometry with
+  three spatial and three temporal dimensions. The theory naturally unifies quantum
+  gravity, dark matter, dark energy, and quantum entanglement through geometric Q-field
+  dynamics.
+keywords:
+  - cosmology
+  - dark matter
+  - quantum gravity
+  - spacetime geometry
+  - temporal dimensions
+  - galaxy rotation curves
+  - pulsar timing
+license: MIT
+version: 7.1
+date-released: "2025-11-06"
