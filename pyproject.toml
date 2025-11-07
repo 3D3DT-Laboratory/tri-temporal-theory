@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tri-temporal-theory"
+version = "2.1.0"
+description = "Research package for 3D+3D Tri-Temporal analysis (SPARC, RAR, baselines)"
+authors = [
+  { name="Simone Calzighetti", email="noreply@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "scipy>=1.10",
+]
+
+[tool.setuptools]
+packages = ["src"]
+package-dir = {"" = "."}

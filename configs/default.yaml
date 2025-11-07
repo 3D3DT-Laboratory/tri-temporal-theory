@@ -1,0 +1,4 @@
+paths:
+  rotmod_zip: "data/Rotmod_LTG.zip"
+outputs:
+  base: "outputs"
