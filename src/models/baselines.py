@@ -1,11 +1,19 @@
-# ===========================================================
-#  TTN Proprietary © Simone Calzighetti — 3D+3D Spacetime Lab
-#  Unauthorized copying of this file, via any medium, is strictly prohibited.
-#  Proprietary and confidential. All rights reserved.
-# ===========================================================
+# TTN Proprietary © Simone Calzighetti — 3D+3D Spacetime Lab
+# All rights reserved.
+# Unauthorized copying, modification, distribution prohibited without prior written consent.
 
-from __future__ import annotations
 import numpy as np
+
+def newtonian_g(V_kms: np.ndarray, R_kpc: np.ndarray) -> np.ndarray:
+    """
+    g = V^2 / R  con V in km/s, R in kpc → g in m/s^2
+    """
+    V = np.asarray(V_kms, float) * 1e3      # km/s → m/s
+    R = np.asarray(R_kpc, float) * 3.085677581e19  # kpc → m
+    with np.errstate(divide="ignore", invalid="ignore"):
+        g = (V**2) / R
+    return g
+
 
 def v_circ_newtonian(M_enclosed, R_m, G=6.67430e-11):
     return np.sqrt(G * M_enclosed / np.clip(R_m, 1e-12, None))
