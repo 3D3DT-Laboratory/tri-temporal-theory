@@ -1,3 +1,7 @@
+
+#  TTN Proprietary © Simone Calzighetti — 3D+3D Spacetime Lab
+#  Unauthorized copying of this file, via any medium, is strictly prohibited.
+#  Proprietary and confidential. All rights reserved.
 """
 Utility functions and constants for 3D+3D analysis.
 """
