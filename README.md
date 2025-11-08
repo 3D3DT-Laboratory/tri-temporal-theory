@@ -56,6 +56,13 @@ tri-temporal-theory_v2_1/
 ├─ pyproject.toml
 └─ README.md
 ```
+### 🔍 RAR Fit and Interpretation
+
+The `rar_fit_CORRECTED.py` module performs a full weighted analysis of the  
+Radial Acceleration Relation (RAR) using the physical 3D+3D formulation  
+(g = g_bar × [1 + (g_bar/g0)^α]).
+
+📘 See full theoretical discussion in [`docs/RAR_EXPLANATION.md`](docs/RAR_EXPLANATION.md)
 
 ## Notes
 
