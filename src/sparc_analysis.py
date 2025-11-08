@@ -1,3 +1,6 @@
+# TTN Proprietary © Simone Calzighetti — 3D+3D Spacetime Lab
+# All rights reserved. Unauthorized copying, modification, or distribution is prohibited.
+
 """
 SPARC galaxy rotation curve analysis for 3D+3D theory validation.
 """
