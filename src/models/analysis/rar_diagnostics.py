@@ -1,3 +1,6 @@
+#  TTN Proprietary © Simone Calzighetti — 3D+3D Spacetime Lab
+#  Unauthorized copying of this file, via any medium, is strictly prohibited.
+#  Proprietary and confidential. All rights reserved.
 # ===========================================================================
 #  RAR DIAGNOSTIC ANALYSIS - Why 3D+3D Fits Are Failing
 #  Author: Simone Calzighetti & Lucy
