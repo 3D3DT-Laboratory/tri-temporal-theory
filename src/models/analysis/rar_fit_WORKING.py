@@ -68,15 +68,20 @@ def mond_gobs(gbar, a0):
 
 def threeD3D_log_model(x_log, g0, gamma):
     """
-    3D+3D additive boost: g_obs = g_bar * [1 + (g_bar/g0)^gamma]
+    3D+3D power-law interpolation in log-space:
     
-    This is the CORRECT phenomenological formula.
-    Expected gamma ~ 0.3-0.5 for MOND-like deep regime.
+    log g_obs = (1 - gamma) * log g0 + gamma * log g_bar
+    
+    Equivalent to: g_obs = g0^(1-gamma) * g_bar^gamma
+    
+    This smoothly interpolates between:
+    - Low g_bar: g_obs ~ g0 * (g_bar/g0)^gamma (MOND-like)
+    - High g_bar: g_obs ~ g_bar (Newtonian)
+    
+    Expected gamma ~ 0.6-0.7 for best RAR fit.
     """
-    g_bar = 10**x_log
-    boost = 1.0 + (g_bar / g0)**gamma
-    g_obs = g_bar * boost
-    return safe_log10(g_obs)
+    logg0 = np.log10(g0)
+    return (1.0 - gamma) * logg0 + gamma * x_log
 
 # ----------------------------
 # Fit pesati (log-spazio)
@@ -300,4 +305,3 @@ if __name__ == "__main__":
     ap.add_argument("--fit-g0", action="store_true", help="Se presente, g0 è lasciato libero (con prior morbida su log10 g0).")
     args = ap.parse_args()
     main(args.rar_csv, ensure_dir(args.outdir), sigma_int=args.sigma_int, fit_g0=args.fit_g0)
-
