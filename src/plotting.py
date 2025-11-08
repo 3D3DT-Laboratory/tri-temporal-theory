@@ -1,3 +1,6 @@
+#  TTN Proprietary © Simone Calzighetti — 3D+3D Spacetime Lab
+#  Unauthorized copying of this file, via any medium, is strictly prohibited.
+#  Proprietary and confidential. All rights reserved.
 """
 Plotting and Visualization for 3D+3D Theory
 ============================================
