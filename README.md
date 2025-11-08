@@ -76,33 +76,23 @@ tri-temporal-theory_v2_2/
 
 ---
 
-## 🔍 RAR Fit and Theoretical Interpretation
+## ✅ Final RAR Validation (v2.2)
 
-The module `src/analysis/rar_fit_CORRECTED.py` performs a full **weighted, non-linear RAR analysis**  
-using the **3D+3D formulation** derived from the Tri-Temporal Spacetime geometry:
+The definitive weighted RAR analysis is implemented in:
+`src/analysis/rar_fit_WORKING.py`
 
-\[
-g_{\mathrm{obs}} = g_{\mathrm{bar}} [1 + (g_{\mathrm{bar}}/g_0)^{\alpha}]
-\]
+**Outputs (public, reproducible):**
+- `outputs/rar_FINAL_CORRECT/comparison_logspace.json`
+- `outputs/rar_FINAL_CORRECT/rar_fit_logspace.png`
+- `outputs/rar_FINAL_CORRECT/rar_fit_logspace_residuals_binned.png`
+- `outputs/rar_FINAL_CORRECT/rar_fit_logspace_residuals_qq.png`
 
-This differs fundamentally from empirical curve-fits (ΛCDM or MOND):  
-it is **not tuned to the data**, but **predicted a priori** from the field coupling of internal temporal dimensions.
+**Best-fit parameters (SPARC-like RAR):**
+- MOND: \( a_0 \approx 3.42 \times 10^{-11}\,\mathrm{m\,s^{-2}} \)
+- 3D+3D: \( \gamma \approx 0.66 \pm 0.02 \)
 
-| Model | χ²_red | R² | Nature |
-|-------|--------:|----:|--------|
-| ΛCDM  | ~2.3 | 0.87 | Empirical |
-| MOND  | ~2.6 | 0.85 | Phenomenological |
-| **3D+3D** | ~5.5 | 0.68 | Physical (rigid prediction) |
+These values sit between classical MOND scaling and the 3D+3D temporal-modulation prediction, and are obtained with robust weighting in log-space (heteroscedastic σ).
 
-📘 See [`docs/RAR_EXPLANATION.md`](docs/RAR_EXPLANATION.md)
-
----
-
-## 📊 Figures
-
-| Model Fits (log-space) | Residuals (binned) | Residuals (Q–Q) |
-|------------------------|--------------------|-----------------|
-| ![RAR Fit](docs/FIGURES/rar_fit_logspace.png) | ![Residuals Binned](docs/FIGURES/rar_fit_logspace_residuals_binned.png) | ![Q–Q Plot](docs/FIGURES/rar_fit_logspace_residuals_qq.png) |
 
 ---
 
