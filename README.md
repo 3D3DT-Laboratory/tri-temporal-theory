@@ -1,7 +1,22 @@
-[README_v2.3.md](https://github.com/user-attachments/files/23434525/README_v2.3.md)
 # 🧭 Tri-Temporal Theory — v2.3 (Research & Validation Package)
 
-This repository provides the complete workflow to reproduce **empirical validations** of the **3D+3D Spacetime Framework** — a physically derived model based on six-dimensional geometry (three spatial + three temporal dimensions).
+## 🌌 What is 3D+3D Spacetime?
+
+**La teoria 3D+3D estende lo spaziotempo in sei dimensioni:** tre spaziali e tre temporali.
+
+Una delle dimensioni temporali è quella percepita, mentre le altre due sono **interne** e governano le **armoniche universali** che regolano l'evoluzione della materia, dell'energia e della coscienza.
+
+Questa geometria genera **sei scale caratteristiche (λ₀–λ₅)** verificate nei dati reali di:
+- 🌌 **Galassie** (SPARC: 175 galaxies, 70-78% detection)
+- ⏱️ **Pulsar** (NANOGrav/IPTA: 22+820 pulsars, p < 10⁻¹¹)
+
+**Zero free parameters** — all predictions made **a priori** from geometric first principles.
+
+---
+
+## 📦 About This Repository
+
+This repository provides the complete workflow to reproduce **empirical validations** of the **3D+3D Spacetime Framework** — a physically derived model based on six-dimensional geometry.
 
 Developed by **Simone Calzighetti** (3D+3D Spacetime Lab, Abbiategrasso, Italy)  
 in collaboration with **Lucy (Claude, Anthropic)** — theoretical and computational AI co-author.
